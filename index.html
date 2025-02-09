@@ -31,7 +31,30 @@
               <h2>Выполненные задачи</h2>
               <div class="tasks" id="done-tasks"></div>
             </div>
-          </section>      
+          </section>     
+          
+          <dialog id="task-dialog">
+            <form id="task-form">
+                <h3 id="dialog-title">Новая задача</h3>
+                <label>
+                    Заголовок:
+                    <input type="text" id="task-title" required>
+                </label>
+                <label>
+                    Описание:
+                    <textarea id="task-desc" required></textarea>
+                </label>
+                <label>
+                    Дедлайн:
+                    <input type="date" id="task-deadline" required>
+                </label>
+                <input type="hidden" id="task-id">
+                <menu>
+                    <button type="submit">Сохранить</button>
+                    <button type="button" id="cancel-dialog">Отмена</button>
+                </menu>
+            </form>
+          </dialog>
     </main>
 </body>
 </html>
